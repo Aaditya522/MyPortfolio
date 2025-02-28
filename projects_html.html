@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-width=1.width">
+  <title>Skills</title>
+  <style>
+        body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .skills-container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .skills-container h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #333;
+      font-size: xx-large;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      background-color: #f0eeb9;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow:  4px 8px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .skill-box2 {
+      background-color: #d2f7b7;
+      color:rgb(34, 33, 33);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow:  4px 8px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    a{
+      text-decoration: none;
+        font-size: smaller;
+        color:rgb(230, 13, 13)
+    }
+
+    .links{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .single_link{
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+    }
+
+    .skill-box:hover,
+    .skill-box2:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-box h3,
+    .skill-box2 h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .skill-box p,
+    .skill-box2 p {
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .skills-container {
+        padding: 10px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="skills-container">
+    <h2>My Projects</h2><br>
+    <div class="skills-grid">
+
+      <h3>HTML,CSS,JS </h3>
+
+      <div class="skill-box">
+        <h3>Weather App</h3>
+        <p>This weather web app, built with HTML, CSS, and JavaScript, fetches and displays weather information of almost all the cities through API requests. 
+           This weather web app was a fun project that allowed me to dive deeper into API interactions and solidify my front-end development abilities. 
+           It's a testament to my commitment to continuous learning and building practical applications.
+        </p>
+        <div class="links"><a href="https://github.com/Aaditya522/CityWeather">GitHub Repository</a>
+        <a href="https://aaditya522.github.io/CityWeather/">View Project</a></div>
+
+      </div>
+
+      <div class="skill-box2">
+        <h3>Portfolio</h3>
+        <p>
+            Experience my learning journey through this visually engaging portfolio. 
+            Utilizing HTML, CSS, and JavaScript, I've created a dynamic platform that highlights my skills, projects, and passion for web development.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Aaditya522/MyPortfolio">GitHub Repository</a>
+          <a href="index.html">View Project</a></div>
+      </div>
+
+      <div class="skill-box">
+        <h3>To-Do-List</h3>
+        <p>This to-do list web app provides a simple yet effective way for users to manage their tasks. 
+           It demonstrates my skills in creating dynamic web applications with features like task creation, editing, and deletion, all within a responsive design. 
+        </p>
+        <div class="links"><a href="https://github.com/Aaditya522/To-Do-List">GitHub Repository</a>
+        <a href="https://aaditya522.github.io/To-Do-List/">View Project</a></div>
+      </div>
+
+      <div class="skill-box2">
+        <h3>Basic Calculator</h3>
+        <p>A simple yet effective calculator web application that provides a seamless user experience for basic mathematical operations. 
+           It highlights my ability to implement interactive functionality using JavaScript and create a clean, intuitive interface.
+        </p>
+        <div class="links"><a href="https://github.com/Aaditya522/Basic_Calculator">GitHub Repository</a>
+        <a href="https://aaditya522.github.io/Basic_Calculator/">View Project</a></div>
+      </div>
+
+    </div>
+
+    <h3>C/C++</h3>
+
+    <div class="skills-grid">
+      
+      <div class="skill-box">
+        <h3>Word Guessing Game</h3>
+        <p>I developed a C++ word guessing game incorporating multiple levels, scoring, and a key system for random word generation. 
+           This project allowed me to practice object-oriented programming with the Word class, 
+           and strengthen my understanding of random number generation and game loop implementation.</p>
+        <div class="single_link"><a href="https://github.com/Aaditya522/Words-Guessing-Game">GitHub Repository</a></div>
+      </div>
+
+      <!-- <div class="skill-box">
+        <h3></h3>
+        <p></p>
+      </div> -->
+
+    </div>
+  </div>
+</body>
+</html>
