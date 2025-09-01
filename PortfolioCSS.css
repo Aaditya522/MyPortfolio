@@ -165,12 +165,12 @@ body {
     transition: .3s; /* Smooth transition for hover effect */
 }
 
-.link-box:hover,
+/* .link-box:hover,
 .link-box2:hover,
 .link-alone-box:hover {
     transform: translateY(-3px);
         border: .5px solid rgb(27, 27, 27);
-}
+} */
 
 i {
     font-size: 30px;
