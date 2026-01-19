@@ -49,6 +49,7 @@ body {
   margin-bottom: 5px;
   margin-top: -80px;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.607); /* Light shadow */
+  cursor: pointer;
 }
 
 .profile-header h2 {
@@ -170,12 +171,12 @@ body {
   transition: 0.3s; /* Smooth transition for hover effect */
 }
 
-.link-box:hover,
+/* .link-box:hover,
 .link-box2:hover,
 .link-alone-box:hover {
   transform: translateY(-3px);
   border: 2px solid rgb(183, 182, 182);
-}
+} */
 
 i {
   font-size: 30px;
