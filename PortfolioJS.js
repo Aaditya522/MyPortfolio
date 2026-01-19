@@ -6,7 +6,7 @@ ProfilePic.addEventListener('click', function() {
     pop_up.classList.add("pop_up");
 
     let image=document.createElement("img");
-    image.src="me2.jpg";
+    image.src="me2.jpeg";
 
     image.classList.add("pop_image");
 
