@@ -12,14 +12,14 @@ body {
 }
 
 .container {
-  background-image: url("woodenbg.jpg");
+  /* background-image: url("woodenbg.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* White container background */
+  background-color: #121212; /* White container background */
   padding-top: 40px;
   width: 100%;
   height: 100%;
