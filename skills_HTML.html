@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-width=1.width">
+
   <title>Skills</title>
+
   <style>
-        body {
+
+    body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
@@ -35,7 +41,7 @@
       background-color: #fff;
       border-radius: 8px;
       padding: 20px;
-      box-shadow:  4px 8px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.3s ease;
     }
@@ -55,13 +61,12 @@
       text-align: justify;
     }
 
-    /* Example color variations */
     .skill-box:nth-child(even) {
-      background-color: #ceecd1; /* Light green */
+      background-color: #ceecd1;
     }
 
     .skill-box:nth-child(odd) {
-      background-color: #eff4b9; /* Light yellow */
+      background-color: #eff4b9;
     }
 
     @media (max-width: 600px) {
@@ -69,98 +74,134 @@
         padding: 10px;
       }
     }
+
+    /* 🔥 Scroll Animation (ADDED ONLY) */
+    .hidden {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
+
 <body>
+
   <div class="skills-container">
-    <h2>My Skills</h2>
+
+    <h2 class="hidden">My Skills</h2>
+
     <div class="skills-grid">
 
       <!--B.E. cse-->
-      <div class="skill-box">
+
+      <div class="skill-box hidden">
         <h3><i class="fas fa-code"></i> HTML5</h3>
         <p>Enthusiastic HTML learner with a passion for structuring and presenting web content effectively.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-file-code"></i> CSS3</h3>
         <p>CSS enthusiast with hands-on experience in building visually appealing and responsive web projects as a fresher.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-js"></i> JavaScript</h3>
         <p>A JavaScript enthusiast with a strong understanding of building dynamic and interactive web applications.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-react"></i> React JS</h3>
         <p>A dedicated React enthusiast with a solid grasp of building dynamic and responsive user interfaces.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-node"></i> Node.js</h3>
         <p>Dedicated Node.js learner with a keen interest in exploring server-side development and creating efficient applications.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-server"></i> Express.js</h3>
         <p>Experience in building RESTful APIs and backend services using Express.js with proper routing, middleware, and authentication.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-user-lock"></i> Authentication & Authorization</h3>
         <p>Implemented authentication and authorization using JWT and session-based methods, along with role-based access control (RBAC) in Express.js and React.js for secure, role-specific access.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-database"></i> MongoDB</h3>
         <p>Hands-on experience with MongoDB using Mongoose and MongoDB Atlas for designing schemas, managing data, and building scalable databases.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3>C/C++</h3>
         <p>Strong foundation in C/C++ syntax, OOPs and Data Structures. Eager to apply and expand my knowledge in practical projects.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-java"></i> JAVA</h3>
         <p>A dedicated Java enthusiast with a strong foundation in programming and a passion for learning.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fab fa-github"></i> GitHub</h3>
         <p> Repository management, pull requests, issue tracking, CI/CD integration.</p>
       </div>
 
       <!--CYBER SECURITY-->
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-balance-scale"></i> Information Security & Compliance</h3>
         <p>Understanding of information security principles, data privacy, secure authentication practices, and basic legal compliance related to user data protection.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-shield-alt"></i> Network Security</h3>
         <p>Understanding of securing networks, firewalls, VPNs, etc.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-terminal"></i> Kali Linux</h3>
         <p>Hands-on experience with Kali Linux tools for penetration testing, vulnerability scanning, and ethical hacking.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-bug"></i> Security Tools</h3>
         <p>Familiar with Wireshark, BUrpSuite, Nmap, and other tools for network analysis and penetration testing.</p>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3><i class="fas fa-lock"></i> Cryptography</h3>
         <p>Basic understanding of encryption, hashing, and secure communication protocols.</p>
       </div>
 
     </div>
+
   </div>
+
+  <!-- 🔥 SAME Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+  </script>
+
 </body>
+
 </html>
