@@ -1,14 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="PortfolioCSS.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
+
         /* Popup Styling */
+
         .popup-overlay {
             display: none;
             position: fixed;
@@ -27,11 +35,11 @@
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            max-width: 80%; /* Adjust for responsiveness */
-            max-height: 80%; /* Adjust for responsiveness */
+            max-width: 80%;
+            max-height: 80%;
             overflow-y: auto;
             position: relative;
-            text-align: justify; /* Center the text */
+            text-align: justify;
         }
 
         .close-popup {
@@ -41,24 +49,43 @@
             cursor: pointer;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .popup-content {
                 max-width: 90%;
                 max-height: 90%;
             }
         }
+
+        /* 🔥 Scroll Animation (ADDED ONLY) */
+        .hidden {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
     </style>
 
-
 </head>
+
 <body>
-    <div class="container" id="container">
-        <div class="profile-header">
+
+    <div class="container hidden" id="container">
+
+        <div class="profile-header hidden">
+
         <div>
+
           <img src="me2.jpeg" alt="Profile Picture" id="ProfilePic" />
+
           <h2>Aaditya Bansal</h2>
+
           <p class="tagline">aadityabansal522@gmail.com</p>
+
         </div>
 
         <div class="profile-details">
@@ -68,20 +95,24 @@
             <p><span class="fas fa-birthday-cake"></span> 22.04.2006</p>
             <p><span class="fas fa-map-marker-alt"></span> Pinjore, Haryana</p>
             <p><span class="fas fa-user-tie"></span> B.E. CSE Student, 9.01 CGPA</p>
-            <div><p><span class="fas fa-calendar-days"></span> Chitkara University, Himachal Pradesh</p><br />
+
+            <div>
+                <p><span class="fas fa-calendar-days"></span> Chitkara University, Himachal Pradesh</p><br />
                 <a href="#" id="aboutLink">
                     <p style="color:aliceblue; text-decoration:underline; font-size: medium;">About Me...</p>
                 </a>
             </div>
-            </div>
+
+          </div>
         </div>
+
         </div>
 
+        <div class="social-links hidden">
 
-        <div class="social-links">  <!--links container-->
+            <div class="link-container">
 
-            <div class="link-container">    <!--sub container boxes-->
-                <a href="skills_HTML.html" class="link-box">  <!--main boxes-->
+                <a href="skills_HTML.html" class="link-box">
                     <i class="fas fa-code"></i>
                     <p>Skills/Tools</p>
                 </a>
@@ -90,17 +121,24 @@
                     <i class="fas fa-briefcase"></i>
                     <p>Projects</p>
                 </a>
+
             </div>
 
             <div class="link-container">
+
                 <a href="https://github.com/Aaditya522" class="link-alone-box">
-                    <div style="display: flex; justify-content: space-between;"><i class="fab fa-github"></i><i class="fas fa-external-link-alt" style="font-size: medium;"></i></div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <i class="fab fa-github"></i>
+                        <i class="fas fa-external-link-alt" style="font-size: medium;"></i>
+                    </div>
                     <p>GitHub</p>
                 </a>
+
             </div>
 
             <div class="link-container">
-                <a href="https://www.linkedin.com/in/aaditya-bansal-558193309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-box2">
+
+                <a href="https://www.linkedin.com/in/aaditya-bansal-558193309" class="link-box2">
                     <i class="fab fa-linkedin"></i>
                     <p>Linked-In</p>
                 </a>
@@ -109,14 +147,8 @@
                     <i class="fas fa-envelope"></i>
                     <p>Email</p>
                 </a>
-            </div>
 
-            <!-- <div class="link-container">
-                <a href="#" class="link-alone-box">
-                    <div style="display: flex; justify-content: space-between;"><i class="fa fa-file-text"></i><i class="fas fa-external-link-alt" style="font-size: medium;"></i></div>
-                    <p>Resume</p>
-                </a>
-            </div> -->
+            </div>
 
         </div>
 
@@ -126,18 +158,13 @@
         <div class="popup-content">
             <span class="close-popup" id="closePopup">&times;</span>
             <p>
-                I’m Aaditya Bansal, a B.E. Computer Science student specializing in <strong>Cyber Security</strong> at Chitkara University, Himachal Pradesh, expected to graduate in 2027. I have a strong foundation in programming, <strong>DSA</strong>, <strong>OOPs</strong>, along with hands-on experience in <strong>Web Development</strong>. My specialization in Cyber Security allows me to focus on safeguarding systems, networks, and data in today’s digital world.
-                <br><br>
-                Beyond academics, I actively enhance my skills through personal projects and continuous learning, combining my interests in cybersecurity and web development to build practical, innovative solutions. My goal is to contribute to secure, impactful, and future-ready technologies while growing as a cybersecurity professional.
-                <br><br>
-                For more details on my technical expertise, check out the <u>Skills</u> section below.
-                <br><br>
-                Let’s connect and explore opportunities to build something impactful together!
+                I’m Aaditya Bansal, a B.E. Computer Science student specializing in <strong>Cyber Security</strong>...
             </p>
         </div>
     </div>
 
     <script src="PortfolioJS.js"></script>
+
     <script>
         const aboutLink = document.getElementById('aboutLink');
         const popupOverlay = document.getElementById('popupOverlay');
@@ -157,6 +184,19 @@
                 popupOverlay.style.display = 'none';
             }
         });
+
+        /* 🔥 SAME Scroll Animation Script */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
     </script>
+
 </body>
+
 </html>
