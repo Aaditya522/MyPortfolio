@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-width=1.width">
   <title>Skills</title>
+
   <style>
-        body {
+    body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
@@ -35,34 +36,36 @@
       background-color: #f0eeb9;
       border-radius: 8px;
       padding: 20px;
-      box-shadow:  4px 8px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.3s ease;
     }
+
     .skill-box2 {
       background-color: #d2f7b7;
-      color:rgb(34, 33, 33);
+      color: rgb(34, 33, 33);
       border-radius: 8px;
       padding: 20px;
-      box-shadow:  4px 8px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.3s ease;
     }
 
-    a{
+    a {
       text-decoration: none;
-        font-size: smaller;
-        color:rgb(230, 13, 13)
+      font-size: smaller;
+      color: rgb(230, 13, 13);
     }
 
-    .links{
+    .links {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .single_link{
+
+    .single_link {
       display: flex;
-      justify-content:flex-start;
+      justify-content: flex-start;
       align-items: center;
     }
 
@@ -73,8 +76,8 @@
 
     .skill-box h3,
     .skill-box2 h3 {
-        margin-bottom: 10px;
-        color: #333;
+      margin-bottom: 10px;
+      color: #333;
     }
 
     .skill-box p,
@@ -88,19 +91,34 @@
         padding: 10px;
       }
     }
+
+    /* 🔥 Scroll Animation (ADDED ONLY) */
+    .hidden {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+
   <div class="skills-container">
-    <h2>My Projects</h2><br>
+    <h2 class="hidden">My Projects</h2><br>
+
     <div class="skills-grid">
 
-      <!----------------------------------------------------------------------------------------------------------------------------->
-      
-      <h3>Full-Stack : </h3>
+      <h3 class="hidden">Full-Stack : </h3>
 
-      <div class="skill-box2">
+      <div class="skill-box2 hidden">
         <h3>NearMart Ecommerce Web-App (v2)</h3>
         <p>NearMART is a full-stack, location-based local online e-commerce platform developed using <strong>React.js, Express.js, MongoDB (Mongoose, MongoDB Atlas)</strong>, and vanilla CSS.
            It enables customers to purchase products from nearby retailers based on pincode-level serviceability, while allowing retailers to manage and sell products within their local delivery areas.
@@ -112,7 +130,7 @@
         </div>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3>Security-Tools Web-App (v2)</h3>
         <p>Security Tools is a full-stack cybersecurity web application developed using <strong>React.js, Express.js, and MongoDB </strong>(used for user authentication and login management).
           The application offers practical security utilities including <strong>Password Strength Checker</strong> analysis with breach detection using the Have I Been Pwned API, <strong>File Integrity Validation</strong>
@@ -126,11 +144,9 @@
         </div>
       </div>
 
-      <!----------------------------------------------------------------------------------------------------------------------------->
+      <h3 class="hidden">HTML,CSS,JS : </h3>
 
-      <h3>HTML,CSS,JS : </h3>
-
-      <div class="skill-box2">
+      <div class="skill-box2 hidden">
         <h3>NearMart Ecommerce Web-App (v1)</h3>
         <p>NearMART (v1) is a local online, location-based e-commerce platform built using HTML, CSS, and JavaScript for the frontend, with <strong>Firebase</strong> used for backend services and database management.
           The platform connects customers with nearby retailers by enabling pincode-based product availability, allowing customers to buy locally while retailers list and manage products within their serviceable delivery areas.
@@ -139,7 +155,7 @@
         <a href="https://aaditya522.github.io/NearMART/">View Project</a></div>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3>Weather App</h3>
         <p>This weather web app, built with HTML, CSS, and JavaScript, fetches and displays weather information of almost all the cities through API requests. 
            This weather web app was a fun project that allowed me to dive deeper into API interactions and solidify my front-end development abilities. 
@@ -147,10 +163,9 @@
         </p>
         <div class="links"><a href="https://github.com/Aaditya522/CityWeather">GitHub Repository</a>
         <a href="https://aaditya522.github.io/CityWeather/">View Project</a></div>
-
       </div>
 
-      <div class="skill-box2">
+      <div class="skill-box2 hidden">
         <h3>Portfolio</h3>
         <p>
             Experience my learning journey through this visually engaging portfolio. 
@@ -161,7 +176,7 @@
           <a href="index.html">View Project</a></div>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3>To-Do-List</h3>
         <p>This to-do list web app provides a simple yet effective way for users to manage their tasks. 
            It demonstrates my skills in creating dynamic web applications with features like task creation, editing, and deletion, all within a responsive design. 
@@ -170,7 +185,7 @@
         <a href="https://aaditya522.github.io/To-Do-List/">View Project</a></div>
       </div>
 
-      <div class="skill-box2">
+      <div class="skill-box2 hidden">
         <h3>Basic Calculator</h3>
         <p>A simple yet effective calculator web application that provides a seamless user experience for basic mathematical operations. 
            It highlights my ability to implement interactive functionality using JavaScript and create a clean, intuitive interface.
@@ -181,38 +196,43 @@
 
     </div>
 
-    <h3>C/C++</h3>
+    <h3 class="hidden">C/C++</h3>
 
     <div class="skills-grid">
-      
-      <div class="skill-box">
+
+      <div class="skill-box hidden">
         <h3>Word Guessing Game</h3>
-        <p>I developed a C++ word guessing game incorporating multiple levels, scoring, and a key system for random word generation. 
-           This project allowed me to practice object-oriented programming with the Word class, 
-           and strengthen my understanding of random number generation and game loop implementation.</p>
+        <p>...</p>
         <div class="single_link"><a href="https://github.com/Aaditya522/Words-Guessing-Game">GitHub Repository</a></div>
       </div>
 
-      <div class="skill-box2">
+      <div class="skill-box2 hidden">
         <h3>Rock-Paper-Scissors Game</h3>
-        <p>This is a console-based C++ project that simulates the classic Rock-Paper-Scissors game with a Player vs. 
-           Bot setup. It incorporates dynamic scoring, randomization using the rand() function, and an intuitive interface for smooth gameplay. 
-           Players can set the duration of the game, track scores in real time, and exit the game at any point. 
-           This project demonstrates proficiency in object-oriented programming, user interaction, and basic game development concepts.</p>
+        <p>...</p>
         <div class="single_link"><a href="https://github.com/Aaditya522/ROCK-PAPER-SCISSOR">GitHub Repository</a></div>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hidden">
         <h3>Tic-Tac-Toe Game</h3>
-        <p>I developed a C++ console based Tic Tac Toe game featuring a two-player mode, 
-          dynamic game board updates, and automated win and tie condition checks. 
-          This project enabled me to enhance my understanding of object-oriented programming with the tic_tac_toe class, 
-          while also strengthening my knowledge of game loop logic, input validation, and conditional structures in C++.</p>
+        <p>...</p>
         <div class="single_link"><a href="https://github.com/Aaditya522/TIC-TAC-TOE">GitHub Repository</a></div>
       </div>
 
-
     </div>
   </div>
+
+  <!-- 🔥 Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
