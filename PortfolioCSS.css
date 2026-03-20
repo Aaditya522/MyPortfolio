@@ -79,6 +79,7 @@ body {
   margin: 2px;
   display: flex;
   align-items: center; /* Vertically center icon and text */
+  justify-content: flex-start;
 }
 
 .detail-list span {
